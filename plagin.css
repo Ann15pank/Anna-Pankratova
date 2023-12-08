@@ -1,0 +1,111 @@
+
+   .seagull {
+    height: 550px;
+    width: 600px;
+    background-image: linear-gradient(-45deg, blue, navy, white);
+    background-color: navy;
+}
+  .img{
+    filter: hue-rotate(90deg);
+    -web-filter:hue-rotate(90deg);
+  }
+   .img2{
+    filter: hue-rotate(180deg);
+    -web-filter:hue-rotate(180deg);
+    border-radius:50px 0px 50px 0px / 50px 0px 50px 0px;
+    height: 350px;
+    overflow: hidden;
+    background: none;
+  border: 5px solid #ffffff;    
+    height: 240px;
+    width: 400px;
+ 
+  }
+
+ .circle-block{
+  background: none;
+  border: 5px solid #3766ef;    
+  border-radius: 50%;
+  height: 250px;
+  width: 450px;
+}
+  .image-radius {
+    border-radius: 70%;
+    border: 10px solid #ffffff;
+    box-shadow: 2px 1px 9px;
+    height: 250px;
+    width: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+
+  }
+
+.tic
+{ 
+  border: 40px solid transparent;
+  padding: 0px;
+  border-image-source: url(tic-tac-toe.png);
+  border-image-repeat: round;
+  border-image-slice: 60; 
+  width: 500px;
+  height:225px;
+
+}
+
+.field 
+{position:absolute;filter:grayscale(100%);
+}
+
+}
+.field:before{
+    content: "";
+    position:absolute;
+    top: -50%;
+    left: -50%;
+    height: 200%;
+    width: 200%;
+    background: url("football_field.jpg") center no-repeat;
+    filter:grayscale(100%);
+    z-index: -1;
+}
+
+.glass {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("theater_stage.jpg") center no-repeat;    
+}
+.glass span {
+    position: relative;
+    text-align: center;
+    color: #FFF;
+    width: auto;
+    font-size: 36px;
+    line-height: 250px; 
+    padding: 50px 50px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2), 0 16px 28px rgba(0,0,0,0.2);
+    text-shadow: 0 0 12px rgba(0,0,0,0.6);   
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    z-index: 1;
+    overflow: hidden;
+}
+.glass span:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    height: 200%;
+    width: 200%;
+    background: url("theater_stage.jpg") center no-repeat;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+
+ 
+
+
+    
