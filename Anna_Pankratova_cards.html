@@ -1,0 +1,105 @@
+<DOCTYPE html>
+<html>
+<head>
+<title> Cards questions</title>
+</head>
+
+<body>
+<div class="text">Answer the questions!</div><br>
+<div class="q5">What is the 
+	capital of Spain?<p> Madrid</p></div><br>
+
+<div class="backW">What sport did Fred Perry play?<p>Tennis</p></div><br>
+<div class="forW">Which vegetable is a pickle?<p>Cucumbers</p></div><br>
+<div class="q1">What is the rarest
+ blood type?<p>AB-Negative</p></div><br>
+<div class="q2"> How many feet are in a mile?<p>5, 280 feet</p></div><br>
+<div class="q1"> Which U.S. state is known for peaches?<p>Georgia</p></div><br>
+<div class="backW">What is hummus made from?<p>Chickpeas</p></div><br>
+<div class="forW">What year did Barbie come out?<p>1959</p></div>
+	<style>
+	@keyframes myAnimation {
+   /* The animation will start with an #006400 font color*/
+    from { color: #006400; }
+   /* And will gradually change to a #00FF7F font color*/
+    to { color: #00FF7F; }  
+  }
+  .text {
+    font-size: 1.4em;
+    font-weight: bold;
+    animation-name: myAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    text-align: center;
+    height: 90px;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .q1 {
+    width: 25%;
+    height: 42px;
+    background-color: #4682B4;
+    padding: 5px;
+    transition: width 3s, height 2s;
+  }
+  div:hover {
+    width: 75%;
+    height: 100px;
+  }
+  /*.q2 {
+    width: 100px;
+    height: 50px;
+    background-color: darkslateblue;
+    color: white; 
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+    animation-name: animLoop;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+  }*/
+  .q2{
+    width: 150px;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 5px;
+    background-color: #4682B4;
+    color: white; 
+    font-weight: bold;
+    font-size: 20px;
+    animation-name: animLoop;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+ 
+  }
+
+    div {
+    width: 150px;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 5px;
+    background-color: #4682B4;
+    color: white; 
+    font-weight: bold;
+    font-size: 20px;
+    animation-name: animLoop;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+  }
+  div .backW {
+    animation-fill-mode: backwards;
+  }
+  div .forW {
+    animation-fill-mode: forwards;
+  }
+  	@keyframes animLoop {
+    from {width: 150px;}
+    to {width: 75%;}
+
+
+</style>
+</body>
+</html>
